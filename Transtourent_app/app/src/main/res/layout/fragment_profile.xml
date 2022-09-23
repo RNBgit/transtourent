@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        tools:context=".home">
+
+
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="50dp"
+            android:paddingTop="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logo"/>
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="380dp"
+            android:layout_height="620dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:paddingTop="185dp"
+            android:src="@drawable/bk" />
+
+        <ImageView
+
+            android:id="@+id/profile_logo"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/app_logo"
+            android:src="@drawable/profilee"/>
+        <TextView
+            android:background="@color/violet"
+            android:id="@+id/profile"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_below="@id/profile_logo"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Juan"
+            android:textSize="20sp"
+            android:layout_below="@id/profile"
+            android:gravity="left"
+            android:layout_marginLeft="45dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"/>
+
+
+
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Cruz"
+            android:textSize="20sp"
+            android:layout_below="@id/profile"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"/>
+
+
+
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="20"
+            android:textSize="20sp"
+            android:layout_below="@id/firstname"
+            android:gravity="left"
+            android:layout_marginLeft="45dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Male"
+            android:textSize="20sp"
+            android:layout_below="@id/firstname"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Cebu City"
+            android:textSize="20sp"
+            android:layout_below="@id/age"
+            android:layout_centerInParent="true"
+            android:paddingLeft="105dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:text="Birthday"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="2dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/datePickerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-06 2022"
+            android:layout_below="@id/date"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            style="?android:spinnerStyle"
+            android:onClick="openDatePicker"/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datePickerBtn"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:background="@drawable/btn2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
