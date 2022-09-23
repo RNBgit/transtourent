@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".conSignup">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:text="Sign Up"
+        android:textSize="50sp"
+        android:textColor="@color/violet"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/signup"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_background"
+        android:hint="Firstname"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/firstname"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_background"
+        android:hint="Firstname"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lastname"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_background"
+        android:hint="Age"
+        android:paddingLeft="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_below="@id/age"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/violet"
+            android:textSize="25sp"
+            android:paddingLeft="20dp"
+            android:text="Male"
+            android:onClick="checkbutton"/>
+
+        <RadioButton
+
+            android:id="@+id/female"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkbutton"
+            android:text="Female"
+            android:paddingLeft="20dp"
+            android:textColor="@color/violet"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/radio"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_background"
+        android:hint="Address..."
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_background"
+        android:hint="Current Location"
+        android:paddingLeft="10dp" />
+
+    <TextView
+
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:text="Select Birthday"
+        android:textColor="@color/violet"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/datePickerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 01 2022"
+        android:layout_below="@id/date"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/violet"
+        android:paddingLeft="20dp"
+        style="?android:spinnerStyle"
+        android:onClick="openDatePicker"/>
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePickerBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:background="@drawable/btn2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+
+
+</RelativeLayout>

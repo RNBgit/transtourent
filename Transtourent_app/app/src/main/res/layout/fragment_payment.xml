@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        tools:context=".home">
+
+        <TextView
+            android:background="@color/violet"
+            android:id="@+id/bookings"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="PAYMENT"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_below="@id/app_logo"
+            android:layout_centerInParent="true"
+            android:paddingLeft="100dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="50dp"
+            android:paddingTop="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logo"/>
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="380dp"
+            android:layout_height="540dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:paddingTop="180dp"
+            android:src="@drawable/bk2hd"/>
+
+        <TableLayout
+
+            android:layout_below="@id/bookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/white">
+
+            <TableRow
+                android:background="@color/orange">
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle"
+                    android:textStyle="bold"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Payment"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Receipt"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"/>
+
+            </TableRow>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"/>
+            <TableRow
+                android:background="@color/orange">
+                <ImageView
+
+                    android:id="@+id/bus1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bus"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="5"
+                    android:src="@drawable/bus_logo"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="PHP 27,000"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bus"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:src="@drawable/upload"/>
+
+            </TableRow>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"/>
+            <TableRow
+                android:background="@color/orange">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bus"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="5"
+                    android:src="@drawable/van_logo"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="PHP 7,000"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bus"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:src="@drawable/upload"/>
+
+            </TableRow>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"/>
+
+
+            <TableRow
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="13sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+
+
+            </TableRow>
+            <TableRow
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="13sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+
+
+            </TableRow>
+            <TableRow
+                android:background="@color/orange">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="13sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/violet"
+                    android:padding="10sp"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+
+
+            </TableRow>
+
+
+
+
+
+
+
+
+        </TableLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

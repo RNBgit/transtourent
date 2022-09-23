@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".menu_nav">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        tools:context=".home">
+
+        <TextView
+            android:background="@color/violet"
+            android:id="@+id/vehicles"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="VEHICLES"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_below="@id/app_logo"
+            android:layout_centerInParent="true"
+            android:paddingLeft="100dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="50dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/logo"/>
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="380dp"
+            android:layout_height="455dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/vehicles"
+            android:src="@drawable/bk2hd"/>
+
+        <ImageView
+
+            android:layout_width="350dp"
+            android:layout_height="420dp"
+            android:scaleType="fitXY"
+            android:layout_below="@id/vehicles"
+            android:layout_marginLeft="-10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/yellow"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/van1"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/vehicles"
+            android:src="@drawable/van_logo"/>
+
+        <TextView
+            android:id="@+id/driver"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text="Driver"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@id/van1"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/violet"/>
+
+        <TextView
+            android:id="@+id/drivername"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Jesse Remejay Paraloar"
+            android:textSize="20sp"
+            android:layout_below="@id/driver"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/drivername"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+        <TextView
+            android:id="@+id/drivernum"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="09123456789"
+            android:textSize="20sp"
+            android:layout_below="@id/drivername"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/drivernum"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+
+        <TextView
+            android:id="@+id/driveremail"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Jesrem@gmail.com"
+            android:textSize="20sp"
+            android:layout_below="@id/drivernum"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/driveremail"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+
+
+
+
+        <TextView
+            android:id="@+id/vehicleview"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Vehicle"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@id/driveremail"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/violet"/>
+
+        <TextView
+            android:id="@+id/vanview"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Van"
+            android:textSize="20sp"
+            android:layout_below="@id/vehicleview"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/vanview"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+        <TextView
+            android:id="@+id/seater"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="12 Seater"
+            android:textSize="20sp"
+            android:layout_below="@id/vanview"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/seater"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Jesse Remejay Paraloar"
+            android:textSize="20sp"
+            android:layout_below="@id/seater"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:textColor="@color/violet"/>
+        <View
+
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/name"
+            android:layout_centerInParent="true"
+            android:background="@color/violet"/>
+
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:text="Book Now"
+            android:background="@drawable/btn2"
+            android:textColor="@color/violet"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
